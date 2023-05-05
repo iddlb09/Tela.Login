@@ -1,0 +1,133 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
+body{
+  background-color: #182f30;
+    color: #eeeeee;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.caixa-login{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.caixa-login h2{
+  margin: 0 0 30px;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+}
+.caixa-login .box-usuario{
+    position: relative;
+}
+.caixa-login .box-usuario input{
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+  outline: none;
+  color: #fff;
+}
+.caixa-login .box-usuario label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.caixa-login .box-usuario input:focus ~ label,
+.caixa-login .box-usuario input:valid ~ label {
+  top: -30px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+.recupera-senha a{
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.recupera-senha a:hover{
+    color: #56c3c9;
+    transition: .5s;
+}
+.enviar a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #007997;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    left: 33%;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+.enviar a:hover {
+    background: #306466;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #03e8f4cb, 0 0 25px #03e8f4c0, 0 0 5px #03e8f49a, 0 0 80px #03e8f48e;
+  }
+  
+  .enviar a span {
+    position: absolute;
+    display: block;
+  }
+  .opcao-login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .opcao-login span{
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .opcao-login .campo-social{
+    padding: 6.5px;
+    border-radius: 4px;
+  }
+  .opcao-login .campo-social a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .opcao-login .campo-social-google{
+    background: transparent;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .opcao-login .campo-social-facebook{
+    background: transparent;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .opcao-login .campo-social-google:hover{
+    background: #2a4142;
+    border-radius: 400px;
+    box-shadow: 0 0 2px #03e8f4cb, 0 0 10px #03e8f4cb, 0 0 10px #03e8f4cb, 0 0 10px #03e8f4cb;
+  }
+  .opcao-login .campo-social-facebook:hover{
+    background: #2a4142;
+    border-radius: 400px;
+    box-shadow: 0 0 2px #03e8f4cb, 0 0 10px #03e8f4cb, 0 0 10px #03e8f4cb, 0 0 10px #03e8f4cb;
+  }
